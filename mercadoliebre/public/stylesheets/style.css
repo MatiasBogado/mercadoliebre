@@ -1,0 +1,175 @@
+/*
+IMPORTS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/*
+VARIABLES
+*/
+:root{
+  --color-amrillo:#EAC926;
+  --color-grisClaro:#ebebeb;
+  --color-grisOscuro:#666666;
+  --color-azul:#03264C;
+  --color-verde:#39b54a;
+  --color-celeste:#1259c3;
+}
+
+/*GENERAL*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  font-family: Roboto;
+  font-weight: 300;
+  background-color: var(--color-grisClaro);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+li{
+  list-style: none;
+}
+
+
+/* CABECERA */
+
+header{
+  background-color: var(--color-amrillo);
+  padding: 20px 0;
+}
+
+header form{
+  background-color: white;
+  border: 1px solid var(--color-grisClaro);
+  border-radius: 5px;
+  padding: 0px 8px;
+}
+
+header form input{
+  border: 0;
+  border-right: 2px solid var(--color-grisClaro);
+  padding-right: 5px;
+  width: 85%;
+}
+header form button{
+  background: 0;
+  border: 0;
+  padding: 0;
+  color: var(--color-grisOscuro);
+}
+
+header .cuotas{
+  text-align: center;
+  padding: 20px 0;
+}
+
+header nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header nav .burger{
+  background-color: var(--color-azul);
+  color: white;
+}
+
+/*
+​
+​
+ACA VAN TODOS LOS ESTILOS DE LA BARRA DE NAVEGACION
+​*/
+​
+/* BANNER */
+.banner img{
+  display: none;
+}
+
+/* PRODUCTOS*/
+
+.titulo{
+  text-align: center;
+}
+
+.titulo h2{
+  font-size: 24px;
+  color: var(--color-grisOscuro);
+  margin: 30px 0;
+}
+
+.contenido{
+  background-color: white;
+  border-radius:10px;
+  text-align: center;
+}
+
+.contenido img{
+  width: 95%;
+}
+
+.contenido article{
+  text-align: left;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--color-grisClaro);
+  position: relative;
+}
+
+.contenido article span{
+  color:var(--color-verde) ;
+  display:flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.contenido article i{
+  color:var(--color-verde);
+  background-color: white;
+  border:1px solid var(--color-verde) ;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+
+
+/* FOOTER */
+
+.footer{
+  padding: 10px;
+  background-color: white;
+}
+
+.footer article{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer article i{
+  font-size: 35px;
+  color: var(--color-celeste);
+  margin: 10px;
+}
+
+.footer h4, .footer p{
+  color: var(--color-grisOscuro);
+  margin: 20px 0;
+}
+
+.footer .copy{
+  border-top: 1px solid var(--color-grisClaro);
+  border-bottom: 1px solid var(--color-grisClaro);
+  padding: 20px 0;
+  text-align: center;
+  color: var(--color-grisOscuro);
+}
